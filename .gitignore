@@ -132,3 +132,6 @@ dmypy.json
 # ignore the database file
 .db
 migrations/
+
+# ignore the env file with our secret credentials
+.env
