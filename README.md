@@ -25,3 +25,8 @@ set up database:
 Usage
 # Mac:
 FLASK_APP=hello.py flask run
+
+
+after resetting the db fetch the data
+http://localhost:5000/users/elonmusk/fetch
+

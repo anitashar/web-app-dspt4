@@ -1,20 +1,17 @@
 
+# web_app/routes/home_routes.py
 
-# app = Flask(__name__)
-
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 home_routes = Blueprint("home_routes", __name__)
 
-
-@home_routes.route('/')
+@home_routes.route("/")
 def hello_world():
-    print("YOU VISITED THE HOME PAGE")
-    return 'Hello, World!'
+    print("YOU VISITED THE HOMEPAGE")
+    #return "Hello, World!"
+    return render_template("prediction_form.html")
 
-
-
-@home_routes.route('/about')
+@home_routes.route("/about")
 def about():
     print("YOU VISITED THE ABOUT PAGE")
-    return 'About Me (TO DO)' 
+    return "About Me (TODO)"
