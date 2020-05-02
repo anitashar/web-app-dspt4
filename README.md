@@ -18,10 +18,15 @@ pipenv install Flask Flask-SQLAlchemy Flask-migrate
 
 set up database:
 
-    FLASK_APP=web_app flask db init #> generates app/migrations dir
+    #> generates app/migrations dir
+    FLASK_APP=web_app flask db init 
+
     # run both when changing the schema:
-    FLASK_APP=web_app flask db migrate #> creates the db (with "alembic_version" table)
-    FLASK_APP=web_app flask db upgrade #> creates the specified tables
+    #> creates the db (with "alembic_version" table)
+    FLASK_APP=web_app flask db migrate 
+
+ #> creates the specified tables
+    FLASK_APP=web_app flask db upgrade
 Usage
 # Mac:
 FLASK_APP=hello.py flask run
