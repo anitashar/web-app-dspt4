@@ -36,5 +36,3 @@ def create_app():
 if __name__ == "__main__":
     my_app = create_app()
     my_app.run(debug=True)
-
-postgres://txujegrcxiuapc:e15ea33ded5786fd8dbbd32939cf3a20b92aea56fb66575752517ad73b7a28b5@ec2-54-210-128-153.compute-1.amazonaws.com:5432/dacr9jusmf7uhv
